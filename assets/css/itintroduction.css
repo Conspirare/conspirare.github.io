@@ -83,7 +83,10 @@ font-size: 16px;
 padding: 10px 5px 5px 10px;
 }
 
+
+
 table, th, td {
+	margin: 0 auto 0 auto;
   border: 1px solid #888585;
   border-collapse: collapse;
   text-align: left;
