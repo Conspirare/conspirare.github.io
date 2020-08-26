@@ -5,13 +5,13 @@ html {
 }
 
 p, ul, dl, ol {
-	font-family: arial;
+	font-family: Open_Sans;
 	line-height: 1.6;
 	font-size: 16px;
 }
 
 h3 {
-	font-family: arial;
+	font-family: Open_Sans;
 	font-size: 20px;
 	font-weight: normal;
 }
@@ -19,6 +19,12 @@ h3 {
   font-family: Juicy;
   src: url(../font/extra_fruity/Extra_Fruity.ttf);
 }
+
+@font-face {
+  font-family: Open_Sans;
+  src: url(../font/Open_Sans/OpenSans-Light.ttf);
+}
+
 
 @font-face {
   font-family: Fruity;
@@ -43,7 +49,7 @@ header {
 #myDIV {
 	  display: none;
 	  float: right;
-	  width: 460px;
+	  width: 560px;
 	  justify-content: space-between;
 	  padding: 20px 0px 20px 20px;
 	  
@@ -52,9 +58,10 @@ header {
 	  #myDIV a {
 		  text-decoration: none;
 		  padding-left: 15px;
-		  font-size: 20px;
-		  font-family: Arima;
-		  color: darkslategray;
+		  font-size: 27px;
+		  font-family: Open_Sans;
+		  font-weight: bold;
+		  color: white;
 	  }
 	  
 	   #myDIV a:hover {
@@ -64,8 +71,45 @@ header {
 	  
 	  #myDIV .active {
 		  text-decoration: underline;
+		text-decoration-style: double;
 	  }
 
+blockquote {
+border-left: 2px solid #ffb8b8;
+    font-family: Open_Sans;
+    background-color: #ffe7eb;
+	
+font-size: 16px;
+padding: 10px 5px 5px 10px;
+}
+
+table, th, td {
+  border: 1px solid #888585;
+  border-collapse: collapse;
+  text-align: left;
+padding: 5px;
+font-family: Open_Sans;
+}
+
+tr:nth-child(even) {
+  background-color: #e9ff93;
+}
+
+blockquote::before {
+  content: open-quote;
+  font-size: 30px;
+}
+blockquote::after {
+  content: close-quote;
+  font-size: 30px;
+}
+blockquote {
+  quotes: "“" "”" "‘" "’";
+}
+
+.white {
+	color: white;
+}
 .special {
 	font-family: Arima;
 	font-size: 30px;
@@ -81,9 +125,9 @@ font-family: Fruity;
 
 h2 {
 font-size: 60px;
-color: 	#ffe62b;
+color: 	orange;
 text-align: center;
-font-family: arial;
+font-family: Open_Sans;
 }
 
 .banner_container {
@@ -111,6 +155,8 @@ font-family: arial;
 .bg_row {
 	width: 100%;
 	height: auto;
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 .row_text {
 width: 600px;	
@@ -140,7 +186,7 @@ margin: 0 auto 0 auto;
 
 .swirl {
 	width: 100%;
-	height: 300px;
+	height: 200px;
 	background-size: cover;
 }
 
